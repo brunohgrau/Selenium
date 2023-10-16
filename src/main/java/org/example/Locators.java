@@ -21,8 +21,8 @@ public class Locators {
         driver.get(
                 "https://bonigarcia.dev/selenium-webdriver-java/web-form.html");
 
+        // By Tag Name
         WebElement textarea = driver.findElement(By.tagName("textarea"));
-
         assertThat(textarea.getDomAttribute("rows")).isEqualTo("3");
 
         // By name
